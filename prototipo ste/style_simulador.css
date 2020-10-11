@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color:#232323;
+    margin: 0;
+    padding: 0;
+    background-image: url(/img/);
+}
+
+.container {
+    background-color:#F8CF2C;
+    padding: 4em;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom:10em;
+    margin-top: 30px;
+    
+    
+}
+
+.btn {
+    background-color: #303C6C;
+    color: white;
+    font-size: 25px;
+    padding: .4em;
+    cursor:pointer;
+   
+}
+.btn:hover {
+    background-color: #2B2A28;
+    color: white;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.pre-resultado {
+    font-size: 30px;
+}
+.resultado {
+    color: blue;
+    font-size: 70px;
+}
+
+.resultado2 {
+    color: green;
+    font-size: 40px;
+}
+
+.container input {
+    font-size: 20px;
+    text-align: center;
+
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color:#68C5CC ;
+   
+}
+
+.title-header{
+    position: absolute;
+    padding: 3px;
+    float: left;
+    margin-left: 2%;
+    font-size: 40px;
+}
+
+.explicando {
+    background-color: #68C5CC;
+    color:black;
+    padding: 4em;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom:10em;
+    font-size: 20px;  
+    
+}
+
+.explicando a {
+    text-decoration: none;
+    color: white;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.img {
+    width: 75px;
+}
+

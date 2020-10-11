@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_simulador.css" >
+    <title>Simulador Financeiro</title>
+</head>
+
+<body>
+    <header>
+        <img class='img' src="img/logo.png">
+
+
+    </header>
+
+    <div class="container">
+        <h1 class="title">SIMULADOR FINANCEIRO:</h1>
+
+        <h2>Quantas lâmpadas existem nos escritórios?</h2>
+        <input type="text" id="qtdLampadas" placeholder="insira o valor aqui">
+
+        <br><br>
+
+        <button class="btn" onclick="simular()">Economizar</button><br><br></br>
+
+        <div id="div_resp" class="pre-resultado">
+            <p>Qual sua economia?</p>
+        </div><br>
+        <br><span>* Esta é apenas uma simulação. O seu desconto real pode sofrer uma variação.</span>
+    </div>
+    <div class="explicando">
+        <h1>Como é feito o cálculo?</h1>
+        <p>Primeiro o nosso simulador calcular o seu consumo de energia de acordo com a quantidade, potência e tempo de
+            uso das lâmpadas(Wh). Após isso, faz-se uma conversão para quilo Watts hora(kW), assim podemos chegar ao
+            valor aproximado que representa o seu consumo. </p>
+        <p>A nossa empresa ultiliza da tecnologia de "Daylight Harvesting", que segundo <a style="color: red;"
+                href="https://www.sciencedirect.com/science/article/pii/S1878029617301317" target="_blank">estudos</a>
+            pode levar a uma
+            <span class="yellow">economia de até 27%</span>. Assim, para finalizar o calculo, subtraimos 27% do seu
+            valor de consumo para resultar na sua possível economia com nossos serviços.</p>
+    </div>
+
+    <script>
+        function simular() {
+            var gastoEnergetico = ((Number(qtdLampadas.value) * 26 * 15 * 22) / 1000) *
+            12; //1000 para converter para quilo Watts hora e multiplicar o valor por 12 meses
+            var custo = gastoEnergetico * 0.8; //0,8 é o custo do quilo Wh em SP
+            var custo_m = custo / 12;
+            var desconto = (27 / 100) * custo; // até 27% de desconto na conta
+            var economia_men = ((73 / 100) * custo) / 12;
+
+            div_resp.innerHTML =
+                `Com ${qtdLampadas.value} lâmpadas, seu gasto mensal de energia é R$<span style="color:red">${custo_m.toFixed(2)}</span>, porém com nossa tecnologia seu gasto mensal é de R$<span style="color:green">${economia_men.toFixed(2)}</span>.<br>
+                                                           Isso representa uma economia anual em energia de até R$<span style="color:blue">${desconto.toFixed(2)}</span>`
+
+        }
+    </script>
+</body>
+
+</html>
