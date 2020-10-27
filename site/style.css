@@ -4,6 +4,7 @@ body {
     margin: 0%;
     padding: 0%;
      font-family: Arial, Helvetica, sans-serif;
+
 }
 .fundo {
     background-image: url(fundo.png);
@@ -12,6 +13,13 @@ body {
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: -1;
+    
+}
+.opc {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 15, 15, 0.3);
 }
 
 .header {
@@ -20,11 +28,12 @@ width: 100%;
 }
 
 .logo {
-    width: 100%;
-    height: 130%;
+    width: 15%;
+    height: 120%;
     margin-left: 1.5%;
     background-image: url(logo.png);
     background-repeat: no-repeat;
+    
 }
 
 .nav {
@@ -76,15 +85,52 @@ a:hover {
 
 
 .baixo {
-top: 87%;
+top: 93%;
 position: absolute;
-margin-left: 50%;
+left: 45%;
 width: 20%;
 }
 
 .baixo img {
-    width: 8%;
-    height: 130%;
-    margin-left: 0%;
+    width: 12%;
+    height: 10%;
+    margin-right: 15%;
     background-repeat: no-repeat;
 }
+
+hr {
+    width: 120%;
+
+
+}
+
+.login {
+width: 100%;
+height: 100%;
+top: 100%;
+position: absolute;
+
+}
+
+.img2 h3 {
+    text-align: center;
+    background-color: chartreuse;
+    height: 100px;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
+
+.img2 {
+    background-image: url(fundo3.jpg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+
