@@ -1,0 +1,90 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+     font-family: Arial, Helvetica, sans-serif;
+}
+.fundo {
+    background-image: url(fundo.png);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+height: 100px;
+width: 100%;
+}
+
+.logo {
+    width: 100%;
+    height: 130%;
+    margin-left: 1.5%;
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+}
+
+.nav {
+    width: 40%;
+    height: 70%;
+    margin-left: 60%;
+    margin-top: -100px;
+    
+
+}
+
+.nav li {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    padding-right: 5%;
+    font-size: 150%;
+}
+
+.nav a {
+    text-decoration: none;
+    color:black;
+}
+
+a:hover {
+    color: yellow;
+}
+
+.centro {
+    height: 100px;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
+.centro h1 {
+    color: black;
+    font-size: 60px;
+    margin: 0%;
+}
+
+.centro h2 {
+    color: black;
+    font-size: 20px;
+    margin: 0%;
+}
+
+
+.baixo {
+top: 87%;
+position: absolute;
+margin-left: 50%;
+width: 20%;
+}
+
+.baixo img {
+    width: 8%;
+    height: 130%;
+    margin-left: 0%;
+    background-repeat: no-repeat;
+}
