@@ -103,25 +103,13 @@ hr {
 
 
 }
-
+/* Parte Login */
 .login {
 width: 100%;
 height: 100%;
 top: 100%;
 position: absolute;
-
-}
-
-.img2 h3 {
-    text-align: center;
-    background-color: chartreuse;
-    height: 100px;
-    width: 300px;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-   transform: translate(-50%, -50%);
-   text-align: center;
+background-size: cover;
 }
 
 .img2 {
@@ -131,6 +119,92 @@ position: absolute;
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;  
+    z-index: -1;
 }
 
+.img2 h3 {
+    text-align: center;
+    height: 12%;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 10%;
+    font-size: 20px;
+color: black;
+}
 
+.img2 h2 {
+    text-align: center;
+    height: 12%;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: -5%;
+    font-size: 20px;
+
+}
+
+.opc2 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.logar {
+    text-align: center;
+    height: 50%;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 17% ;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.931);
+    border-radius: 40px 0px;
+    font-size: 22px;
+    
+}
+
+.login h4 {
+margin-right: 70%;
+
+}
+
+.nome {
+    margin-right: 65%;
+   width: 50%;
+   margin-left: 3%;
+   border: black;
+   height: 5%;
+   border-radius: 3%;
+   background-color: rgba(128, 128, 128, 0.123);
+}
+
+.email {
+    margin-right: 65%;
+    width: 50%;
+    margin-left: 3%;
+    border: black;
+    height: 5%;
+    border-radius: 3%;
+    background-color: rgba(128, 128, 128, 0.123);
+}
+
+.tel {
+    margin-right: 65%;
+    width: 50%;
+    margin-left: 3%;
+    border: black;
+    height: 5%;
+    border-radius: 3%;
+    background-color: rgba(128, 128, 128, 0.123);
+}   
+
+#bot1 {
+    width: 30%;
+    margin-top: 6%;
+    font-size: 15px;
+    border-radius: 8%;
+    
+
+}
+
+#bot1:hover{
+background-color:#414141;
+}
