@@ -9,20 +9,23 @@
 </head>
 
 <body>
-    <div class="fundo">
+    <div id="fundo">
         <div class="opc">
             <div class="header">
-                <div class="logo"> </div>
+                <a href="#fundo">
+                    <div class="logo"> </div>
+                </a>
                 <div class="nav">
                     <ul>
                         <i>
-                            <li> <a href="#">Cursos</a> </li>
+                            <li> <a href="#curso">Cursos</a> </li>
                         </i>
                         <i>
-                            <li> <a href="#">Quem Sou?</a> </li>
+                            <li> <a href="sobre.html">Quem Sou?</a> </li>
                         </i>
                         <i>
-                            <li> <a href="#">Cadastre-se</a> </li>
+                            <li> <a href="#login">Cadastre-se</a> </li>
+                            <li> <a href="#"> Saiba mais</a> </li>
                         </i>
                     </ul>
                     </ul>
@@ -32,55 +35,78 @@
 
 
                 </div>
-                <div class="centro">
-                    <h1> Marques Consultoria </h1>
-                    <hr>
-                    <h2> Consultoria de educação financeira eficiente </h2>
-                </div>
+            </div>
+            <div class="centro">
+                <h1> Marques Consultoria </h1>
 
-                <div class="baixo">
-                    <img src="face.png" alt="">
-                    <img src="instagram.png" alt="">
-                    <img src="whatsapp.png" alt="">
+                <h2> Consultoria de educação financeira eficiente </h2>
+            </div>
 
-                </div>
+            <div class="baixo">
+                <img src="face.png" alt="">
+                <img src="instagram.png" alt="">
+                <img src="whatsapp.png" alt="">
 
             </div>
+
+
         </div>
     </div>
     <!-- Cursos-->
 
-    <div class="curso">
+    <div id="curso">
         <h3>Cursos</h3>
 
         <div class="conteudo">
-            <h2>Gerencimento pessoal</h2>
+          <div id="g1"><b> Gerenciamento Pessoal</b> </div>
+            <div id="g2"></div>
+            <div id="g3"> <b> inicial, e de certo o mais importante para um inicio da mudança de vida!!! </b> </div>
+            <div id="g4"> 
+                <button id="comprar" onclick="compra()">Comprar</button>
+            </div>
+          
         </div>
 
         <div class="conteudo2">
-            <h2> Plano de vida financeiro </h2>
+            <div id="g1"> <b>Plano de vida financeiro</b> </div>
+            <div id="g22"></div>
+          <div id="g3"> <b> Com este curso você será capaz de arquitetar sua vida financeira$</b> </div>
+            <div id="g4"> 
+                <button id="comprar" onclick="compra()">Comprar</button>
+            </div>
         </div>
         <div class="conteudo3">
-            <h2> Fixação de um novo Mindset </h2>
+            <div id="g1"> <b>Fixação de um novo Mindset</b> </div>
+            <div id="g222"></div>
+            <div id="g3"> <b>Você irá por em prática seu novo modo de ser para coma vida!!!</b> </div>
+            <div id="g4">
+                <button id="comprar" onclick="compra()">Comprar</button>   
+                 
+                
         </div>
 
 
     </div>
 
-    <div class="login">
-
+    <div id="login">
         <h3>Pronto para obter liberdade financeira?</h3>
-        <h2> Crie uma conta para mais informações </h2>
+        <h2> Preencha os campos abaixo e receberá mais informações </h2>
 
-        <div class="logar">
-            <h3> Cadastrar </h3>
-            Nome
-            <input class="nome" type="text"> <br>
-            E-mail <br>
-            <input class="email" type="text"> <br> 
-            Telefone <br> 
-            <input class="telefone" type="text">
-
+        <div id="logar">
+            <div id="cadastrar">
+                <h2> cadastrar </h2>
+            </div>   
+            <div id="divinput">
+                <p>Nome</p>
+                <input class="nome" type="text"> <br>
+                <p> E-mail</p>
+                <input class="email" type="text"> <br>
+                <p>Telefone</p>
+                <input class="telefone" type="text">
+            </div>
+            <div id="botao">
+                <button id="comprar" onclick="enviar()"> Enviar </button>
+            </div>
         </div>
 
     </div>
