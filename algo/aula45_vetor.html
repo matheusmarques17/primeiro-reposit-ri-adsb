@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 45 - Vetor exercicio</title>
+</head>
+<body>
+    <!--
+        crie um programa que tenha um input para entrar com o nome do aluno que
+        será carregado em um vetor quando for clicado o botão "inserir"
+        Esse pgm terá um outro botão "mostrar", que exibe os nomes inseridos, um 
+        abaixo do outro.
+    -->
+    Insira nomes: <br><br>
+    <input type="text" name="" id="num"> <br><br>
+    <button onclick="inserir()">insira</button>
+    <button onclick="mostrar()">mostre</button><br>
+    <div id="seg"></div>
+
+</body>
+</html>
+<script>
+    var aluno = [];
+    function inserir() {
+        aluno.push (num.value);
+        alert(aluno);
+     
+    }
+    function mostrar() {
+        aluno.length - 1;
+      seg.innerHTML += `<br> ${num.value}`;
+        
+    }
+
+</script>

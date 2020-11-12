@@ -141,8 +141,8 @@ background-image: url(../site/fundoc.jpg);
 }
 
 .conteudo {
-    width: 450px;
-    height: 550px;
+    width: 370px;
+    height: 500px;
     background-color:rgba(255, 255, 0, 0.719);
     border-radius: 40px 0px;
 }
@@ -157,8 +157,8 @@ background-image: url(../site/fundoc.jpg);
 
 .conteudo2 {
     
-    width: 450px;
-    height: 550px;
+    width: 370px;
+    height: 500px;
     background-color:rgba(255, 68, 0, 0.767);
     border-radius: 40px 0px;
 }
@@ -171,8 +171,8 @@ background-image: url(../site/fundoc.jpg);
 }
 
 .conteudo3 {
-    width: 450px;
-    height: 550px;
+    width: 370px;
+    height: 500px;
     background-color:rgba(71, 212, 71, 0.705);
     border-radius: 40px 0px;
 }
@@ -209,22 +209,12 @@ z-index: -2;
     font-size: 25px;
 }
 
-#logar {
-<<<<<<< HEAD:site/site/site/style.css
+#logar {    
     background-color: rgba(0, 0, 0, 0.753);
     width: 600px;
     height: 600px;
     /* margin-left: 35%; */
-    border-radius: 30px 30px;
-=======
-background-color: rgba(0, 0, 0, 0.753);
-height: 600px;
-width: 500px;
-margin-left: 35%;
-border-radius: 30px 30px;
->>>>>>> 988798d6e54eaaa987ac349affca9c27933300d5:site/style.css
-
-    
+    border-radius: 30px 30px;  
 }
 
 #cadastrar {
