@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 43</title>
+</head>
+<body>
+    <h3>Aula 43 - Break </h3><br>
+    Quantos numêros você pretennde sortear: <br>
+    <input type="text" name="" id="qtde" placeholder="Quantos números"> <br>
+    <br>
+    <button onclick="sortear()">Sortear numeros</button>
+    <br><br>
+    <div id="div_num"></div>
+</body>
+</html>
+<script>
+    function sortear() {
+        var resto = 0;
+        var sorteado = 0;
+        for (var contador = 0; contador < qtde.value; contador++ ) {
+            sorteado = (Math.random()*100).toFixed(0);
+            div_num.innerHTML += `${sorteado} <br>`;
+            resto = sorteado % 7;
+            if (resto == 0) {
+                break;
+                
+            }
+       
+     }
+        
+    }
+
+</script>

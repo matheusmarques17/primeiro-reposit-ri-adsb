@@ -210,11 +210,19 @@ z-index: -2;
 }
 
 #logar {
+<<<<<<< HEAD:site/site/site/style.css
     background-color: rgba(0, 0, 0, 0.753);
     width: 600px;
     height: 600px;
     /* margin-left: 35%; */
     border-radius: 30px 30px;
+=======
+background-color: rgba(0, 0, 0, 0.753);
+height: 600px;
+width: 500px;
+margin-left: 35%;
+border-radius: 30px 30px;
+>>>>>>> 988798d6e54eaaa987ac349affca9c27933300d5:site/style.css
 
     
 }
