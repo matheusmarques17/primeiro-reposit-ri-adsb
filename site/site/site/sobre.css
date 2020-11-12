@@ -3,23 +3,37 @@ body {
     width: 100%;
     height: 100%;
     margin: 0%;
+    position: absolute;
     padding: 0%;
 }
 
 #fundo {
     width: 100%;
     height: 100%;
-    position: absolute;
     background-image: url(s2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 #logo {
-    width: 12%;
+    width: 8%;
     height: 14%;
     background-image: url(logo.png);
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;    
+    margin: 0;
+    position: absolute;
+}
+
+#ali {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #container {
@@ -39,8 +53,8 @@ body {
 }
 
 #math {
-    width: 80%;
-    height: 80%;
+    width: 550px;
+    height: 650px;
     margin: auto;
     background-image: url(matheus.jpg);
     background-repeat: no-repeat;
@@ -50,17 +64,18 @@ body {
 
 #texto {
     width: 50%;
-    height: 80%;
+    height: 85%;
     float: right;
     display: flex;
     justify-content: center;
+    /* text-align: center; */
+    align-items: center;
 }
 
 #conteudo {
-    width: 80%;
-    height: 80%;
-    margin: auto;
-
+    width: 600px;
+    height: 600px;
+    /* margin: auto; */
 }
 
 #tex {
@@ -71,4 +86,8 @@ body {
     align-items: center;    
     justify-content: center;
     color: black;
+}
+#texto {
+    font-size: 1.1em;
+    text-align: justify;
 }
