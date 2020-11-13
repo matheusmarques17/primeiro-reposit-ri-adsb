@@ -26,6 +26,7 @@ body {
 }
 #logo img {
     width: 100%;
+    height: 120%;
 }
 
 
@@ -60,7 +61,7 @@ body {
     margin: auto;
 }
 #math img {
-    width: 460px;
+    width: 480px;
     height: 520px;
 }
 
