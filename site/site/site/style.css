@@ -191,7 +191,7 @@ background-image: url(../site/fundoc.jpg);
 /* inicio login */
 #login {
 width: 100%;
-height: 100%;
+height: 120%;
 background-size: cover;
 background-image: url(fundol.jpg);
 background-repeat: no-repeat;
@@ -212,7 +212,7 @@ z-index: -2;
 #logar {    
     background-color: rgba(0, 0, 0, 0.753);
     width: 600px;
-    height: 600px;
+    height: 580px;
     /* margin-left: 35%; */
     border-radius: 30px 30px;  
 }
@@ -237,7 +237,7 @@ input   {
 }
 
 #divinput {
-    height:70%;
+    height:65%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -250,6 +250,7 @@ input   {
 #divinput p {
     font-size: 20px;
     color: white;
+    margin: 10px;
 }
 
 #botao {
@@ -341,6 +342,7 @@ button:hover {
 
  #cadastrar h2 {
      color: white;
+     text-transform: uppercase;
  }
 
  #org {
