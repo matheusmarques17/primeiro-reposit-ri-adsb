@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+    <link rel="stylesheet" href="dados.css">
+</head>
+
+<body>
+    <div id="fundo">
+        <div id="nav">
+            <div id="logo">
+                <img src="imagens/logo.png" alt="logo">
+            </div>
+            <div id="voltar">
+                <i><a href="index.html"><img id="sair" src="imagens/sair.png"></a></i>
+
+            </div>
+            <div id="titulo">
+                <h2> Simulador Online de investimentos </h2> 
+                <div id="exc"> <img id="exclama" src="imagens/exclamacao (3).png" alt=""> </div>
+            </div>
+        </div>
+        <div id="vermelho">
+            <div id="cima">
+                <div id="simulador">
+                    <h2>Simulador</h2>
+                    <h3>informe a sua idade ✌ </h3>
+                    <input id="sm" type="text"> 
+                   <h3>Informe o quanto deseja investir 💲</h3>  
+                    <input id="sm2" type="text"> 
+                    <button id="botao" onclick="avaliar()">Calcular</button>
+
+
+                </div>
+            </div>
+            <div id="baixo">
+                <div id="resultado0">
+                    Veja só
+                </div>
+                <div id="resultado">
+                    CDB
+                </div>
+                <div id="resultado2">
+                    Selic
+                </div>
+                <div id="resultado3">
+                    Fundo imobiliario
+                </div>
+                <div id="resultado4">
+                    Poupança
+                </div>
+            </div>
+        </div>
+        <div id="verde">
+            <div id="laranja">
+               <a href="https://corretora.clear.com.br/">
+                <h2> Hey jovem bora adquirir uns ativos? </h2></a> 
+            </div>
+            <div id="laranja">
+               <a href="https://warren.com.br/blog/"> <h2>Invista á longo prazo !!!</h2></a>
+            </div>
+            <div id="laranja">
+               <a href="index.html"> <h2>Invista em você ❤</h2></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<script>
+        function avaliar() {
+         
+           var cal1 =  Number(sm.value) + 25;
+           resultado0.innerHTML = ` Sua idade ${cal1}`;
+
+            // Multiplica o valor que pessoa que investir pelo total de meses    
+            var result = Number(sm2.value) * 300;
+            var result2 = result + ((6 / 100) * result);
+            resultado.innerHTML = `${result2}💲`;
+            // parte CDB - taxa 6% + o que a pessoa investiu
+            var result3 = result + ((2 / 100) * result);
+            resultado2.innerHTML = `${result3}💲`;
+            //parte SELIC - taxa 2% + o que a pessoa investiu
+            var result4 = result + ((4.88 / 100) * result);
+            resultado3.innerHTML = `${result4}💲`;
+            // parte fundo imobiliario KNRI11 - taxa 4.88% + o que a pessoa investiu (2019)
+            var result5 = result + ((1.4 / 100) * result);
+            resultado4.innerHTML = `${result5}💲`;
+            // parte poupança - taxa 1.4% + o que a pessoa investiu
+
+            while (result4 >= 100000) {
+                if (result4 > 100000) {
+                alert(`${result4}💲, com está quantidade de FIIS você irá pagar uns impostos, mas isso não um problema grande investidor!`)
+                break;
+            }
+            }
+            
+            for (var result = 0; result5 >= 50000;) {
+                alert(`${result5}💲, tudo isso na poupança, melhor trocar de investimento meu jóvem! 😉`);  
+                break;
+            }
+
+            if (sm.value >= 30) {
+                alert(" huum, talves não seja mais jovem em 🤣🤣🤣, porém sempre é cedo para investir.");
+                
+            } else {
+                alert("está na flor da idade para começar investir.");
+            }
+
+
+            
+            
+    }
+</script>

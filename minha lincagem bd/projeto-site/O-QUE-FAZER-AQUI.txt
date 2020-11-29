@@ -1,0 +1,13 @@
+0. abra o git bash nesta pasta
+
+1. executar "npm i" e aguardar uns instantes, pois fará uns downloads
+
+2. executar "npm i -g nodemon". Caso de certo, vá para o passo #3. Caso dê errado, vá pra o passo #4
+
+3. (caso o passo #2 tenha dado certo) executar "nodemon --exec npm start"
+
+4. (caso o passo #2 tenha dado errado) executar "npm start"
+
+5. p/ testar acesse este endereço no navegador:  localhost:3000/index.html
+   Deve aparecer um formulário de login
+

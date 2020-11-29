@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="teste.js">
+</head>
+
+<body>
+    <div id="fundo">
+        <div class="opc">
+            <div class="header">
+
+                <div class="logo">
+                    <a href="#fundo">
+                        <img src="" alt="">
+                    </a>
+                </div>
+
+                <div class="nav">
+                    <ul>
+                        <i>
+                            <li> <a href="#curso">Cursos</a> </li>
+                        </i>
+                        <i>
+                            <li> <a href="sobre.html">Quem Sou?</a> </li>
+                        </i>
+                        <i>
+                            <li> <a href="#cadast">Cadastre-se</a> </li>
+                            <li> <a href="dados.html"> Simular</a> </li>
+                        </i>
+                    </ul>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="centro">
+                <h1> Marques Consultoria </h1>
+
+                <h2> Consultoria de educação financeira voltada apara jovens</h2>
+            </div>
+
+            <div class="baixo">
+                <img src="imagens/face.png" alt="">
+                <img src="imagens/instagram.png" alt="">
+                <img src="imagens/whatsapp.png" alt="">
+
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Cursos-->
+
+    <div id="curso">
+        <div id="cr">
+            <h3>Cursos</h3>
+        </div>
+        <div id="conteudos1">
+            <div class="conteudo">
+                <div id="g1"><b> Gerenciamento Pessoal</b> </div>
+                <div id="g2"></div>
+                <div id="g3"> <b> inicial, e de certo o mais importante para um inicio da mudança de vida!!! </b> </div>
+                <div id="g4">
+                    <button id="comprar" onclick="compra()">Comprar</button>
+                </div>
+            </div>
+
+            <div class="conteudo2">
+                <div id="g1"> <b>Plano de vida financeiro</b> </div>
+                <div id="g22"></div>
+                <div id="g3"> <b> Com este curso você será capaz de arquitetar sua vida financeira$</b> </div>
+                <div id="g4">
+                    <button id="comprar" onclick="compra()">Comprar</button>
+                </div>
+            </div>
+
+            <div class="conteudo3">
+                <div id="g1"> <b>Fixação de um novo Mindset</b> </div>
+                <div id="g222"></div>
+                <div id="g3"> <b>Você irá por em prática seu novo modo de ser para coma vida!!!</b> </div>
+                <div id="g4">
+                    <button id="comprar" onclick="compra()">Comprar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<!-- inicio do cadastro -->
+    <div id="cadast">
+        <div  id="texcadastro">
+            <h3> Pronto para obter liberdade financeira? <br>
+             Preencha os campos abaixo e receberá mais informações</h3>
+             </div>
+        <div id="org">
+         
+         
+            <div id="logar">
+                <div id="cadastraar">
+                    <h2> cadastrar </h2>
+                </div>
+                <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+                    <p>Nome</p>
+                    <input class="nome" name="nome" type="text" placeholder="Nome:"> <br>
+                    <p> E-mail</p>
+                    <input class="email" name="email" type="email" placeholder="Ex: joão.souza  @gmail.com"> <br>
+                    <p>Telefone</p>
+                    <input class="telefone" name="telefone" type="tel" placeholder="Ex: 1195093-9974">
+                    <div id="botao"> <button id="enviar"> Enviar </button> </div>
+                </form>
+
+              
+            </div>
+            <div id="imgcad"> 
+                <img id="trade" src="imagens/cash-flow.png" alt="">
+                 </div>
+        </div>
+    </div>
+
+    <script src="cadastro.js">  </script>
+
+    <script src="funcoes.js"></script>

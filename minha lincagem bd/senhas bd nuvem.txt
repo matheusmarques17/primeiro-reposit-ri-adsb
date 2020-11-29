@@ -1,0 +1,9 @@
+nome do banco: banco site-individual
+
+host: pi-site
+
+database: banco site-individual
+
+username: marques17
+
+senha: 170501ma@
